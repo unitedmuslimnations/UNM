@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UMN — United Muslim Nations. Unity, faith, and progress through a connected global community.">
+  <title>UMN | United Muslim Nations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- EmailJS powers the Contact Us and UMN News forms. -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script><script src="https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js"></script><script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+</head>
+<body>
+  <div id="authGate" class="auth-gate"><div class="auth-backdrop"></div><section class="auth-card" aria-labelledby="authTitle">
+    <div class="auth-brand"><span class="brand-mark">UMN</span><span>UNITED MUSLIM NATIONS</span></div><div class="auth-intro"><p class="eyebrow">A connected world begins here</p><h1 id="authTitle">Welcome to the circle.</h1><p>Join a thoughtful global community built on unity, faith, and progress.</p></div>
+    <div class="auth-tabs" role="tablist"><button class="auth-tab active" data-auth-tab="signin" role="tab">Sign In</button><button class="auth-tab" data-auth-tab="signup" role="tab">Create Account</button></div>
+    <form id="signInForm" class="auth-form"><label>Email or username<input name="identity" required autocomplete="username" placeholder="you@example.com"></label><label>Password<input name="password" type="password" required autocomplete="current-password" placeholder="Enter your password"></label><p id="signInError" class="form-error" aria-live="polite"></p><button class="button button-dark full" type="submit">Enter UMN <span>→</span></button></form>
+    <form id="signUpForm" class="auth-form hidden"><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>Username<input name="username" required minlength="3" autocomplete="username" placeholder="Choose your community name"></label><label>Password<input name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters"></label><label>Confirm password<input name="confirmPassword" type="password" required autocomplete="new-password" placeholder="Repeat your password"></label><p id="passwordError" class="form-error" aria-live="polite"></p><button class="button button-dark full" type="submit">Create my account <span>→</span></button></form>
+    <p class="auth-note">By continuing, you agree to participate with respect and purpose.</p>
+  </section></div>
+  <div id="app" class="site-shell"><header class="site-header"><a href="#home" class="wordmark"><span class="brand-mark">UMN</span><span>United Muslim Nations</span></a><nav class="main-nav" aria-label="Main navigation"><a href="#home" data-route="home">Home</a><a href="#about" data-route="about">About Us</a><a href="#goals" data-route="goals">Global Expansion</a><a href="#news" data-route="news">UMN News</a><a href="#contact" data-route="contact">Contact Us</a></nav><div class="header-actions"><span class="user-chip" id="userChip"></span><button class="icon-button mobile-menu" id="menuToggle" aria-label="Open menu">☰</button></div></header>
+  <main id="page"></main><footer class="site-footer"><div><a href="#home" class="wordmark"><span class="brand-mark">UMN</span><span>United Muslim Nations</span></a><p class="footer-copy">A shared future, built together.</p></div><div class="footer-links"><a href="#about">Our story</a><a href="#goals">Our goals</a><a href="#news">UMN News</a><a href="#contact">Connect</a></div><p class="copyright">© 2024 UMN. Unity · Faith · Progress.</p></footer></div><div id="toast" class="toast" role="status"></div><script src="app.js"></script>
+</body></html>
